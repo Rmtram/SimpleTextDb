@@ -1,0 +1,12 @@
+.idea
+.DS_Store
+
+*.log
+
+vendor
+tdb
+
+composer.lock
+composer.phar
+
+!.gitkeep
