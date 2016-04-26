@@ -10,6 +10,10 @@ use Rmtram\SimpleTextDb\Driver\AbstractDriver;
 use Rmtram\SimpleTextDb\Exceptions\UndefinedDriverException;
 use Rmtram\SimpleTextDb\Shared\Memory;
 
+/**
+ * Class Connector
+ * @package Rmtram\SimpleTextDb
+ */
 class Connector
 {
 

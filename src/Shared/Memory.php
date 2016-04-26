@@ -9,6 +9,10 @@ use Rmtram\SimpleTextDb\Config\Attribute;
 use Rmtram\SimpleTextDb\Exceptions\LockException;
 use Rmtram\SimpleTextDb\Exceptions\UnMatchDriverException;
 
+/**
+ * Class Memory
+ * @package Rmtram\SimpleTextDb\Shared
+ */
 class Memory
 {
 
