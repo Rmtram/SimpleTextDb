@@ -5,6 +5,10 @@ namespace Rmtram\SimpleTextDb\Driver;
 use Rmtram\SimpleTextDb\Config\Attribute;
 use Rmtram\SimpleTextDb\Shared\Memory;
 
+/**
+ * Class AbstractDriver
+ * @package Rmtram\SimpleTextDb\Driver
+ */
 abstract class AbstractDriver
 {
 
@@ -26,14 +30,6 @@ abstract class AbstractDriver
         $attribute->assert();
         $this->attribute = $attribute;
         $this->memory = Memory::make($this->attribute);
-    }
-
-    /**
-     * file sync.
-     */
-    public function __destruct()
-    {
-        $this->memory->sync();
     }
 
 }

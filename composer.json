@@ -3,12 +3,11 @@
   "type": "library",
   "description": "Simple text file based database and database mapper.",
   "keywords": [
-    "Text",
-    "TextORM",
+    "text database",
+    "text db",
+    "text database mapper",
     "TextDatabase",
-    "Database",
-    "DatabaseMapper",
-    "SimpleDatabase"
+    "text kvs"
   ],
   "homepage": "https://github.com/Rmtram/SimpleTextDb",
   "support": {
