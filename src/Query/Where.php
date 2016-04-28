@@ -133,7 +133,7 @@ class Where
      * @throws NotOperatorClassException
      * @throws UndefinedOperatorClassException
      */
-    private function call(\Closure $callable)
+    private function call(callable $callable)
     {
         $rows = $this->memory->get();
         foreach ($rows as $index => $row) {
