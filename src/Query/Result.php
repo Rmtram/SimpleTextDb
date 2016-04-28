@@ -52,7 +52,7 @@ class Result
     {
         $exists = false;
         try {
-            $this->call(function() use(&$exists) {
+            $this->call(function() {
                 throw new CallbackBreakException;
             });
         } catch (CallbackBreakException $e) {
