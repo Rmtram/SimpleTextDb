@@ -38,7 +38,6 @@ abstract class AbstractLike implements OperatorInterface
      */
     public function evaluate($key, $val, $row)
     {
-        $substr = function_exists('mb_substr') ? 'mb_substr' : 'substr';
         $forward  = $this->sub($val, -1) !== $this->literal ? '^' : null;
         $backward = $this->sub($val, 0, 1) !== $this->literal ? '$' : null;
         $val = ltrim($val, $this->literal);

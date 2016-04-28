@@ -52,7 +52,7 @@ class Result
     {
         $exists = false;
         try {
-            $this->call(function() use(&$exists) {
+            $this->call(function() {
                 throw new CallbackBreakException;
             });
         } catch (CallbackBreakException $e) {
@@ -92,7 +92,7 @@ class Result
     /**
      * @param callable $callable
      */
-    public function call(\Closure $callable)
+    public function call(callable $callable)
     {
         $where = $this->where;
         \Closure::bind(function() use($callable, $where) {

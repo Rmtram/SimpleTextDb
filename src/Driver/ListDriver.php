@@ -65,7 +65,7 @@ class ListDriver extends AbstractDriver
      * @param callable $callable
      * @return Result
      */
-    public function find(\Closure $callable)
+    public function find(callable $callable)
     {
         $where = new Where($this->memory);
         $callable($where);
@@ -104,11 +104,11 @@ class ListDriver extends AbstractDriver
     }
 
     /**
-     * @param \Closure $callable
+     * @param callable $callable
      * @return bool
      * @throws FailureDeletedException
      */
-    public function delete(\Closure $callable)
+    public function delete(callable $callable)
     {
         $where = new Where($this->memory);
         $callable($where);
